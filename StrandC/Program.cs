@@ -32,7 +32,7 @@ namespace StrandC
                     leghidegebbnev = furdok[i].nev;
                 }
             }
-            Console.WriteLine($"A leghidegebb víz a(z): {leghidegebbnev} nevű fürdőben van");
+            Console.WriteLine($"A leghidegebb víz a(z) {leghidegebbnev} nevű fürdőben van");
             Console.WriteLine("10.feladat");
             Console.WriteLine("Adjon meg egy fürdő nevét:");
             string nev = Console.ReadLine();
