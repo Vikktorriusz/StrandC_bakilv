@@ -20,7 +20,7 @@ namespace StrandC
             {
                 atlag += furdok[i].ar;
             }
-            Console.WriteLine($"A fürdőbelépők átlagos ára: {atlag / furdok.Count}");
+            Console.WriteLine($"A fürdőbelépők átlagos ára: {atlag / furdok.Count:F1}");
             Console.WriteLine("9.feladat");
             double leghidegebb = furdok[0].vizhofok;
             string leghidegebbnev = "";
@@ -48,9 +48,7 @@ namespace StrandC
             }
             if (van)
             {
-                Console.WriteLine($"A fürdő címe: {furdok[keresettfurdo].cim}");
-                Console.WriteLine($"A fürdő belépő ára: {furdok[keresettfurdo].ar} Ft");
-                Console.WriteLine($"A fürdő vizének hőfoka: {furdok[keresettfurdo].vizhofok} °C");
+                Console.WriteLine($"A fürdő {furdok[keresettfurdo].telepules()} településen van, az irányítószám: {furdok[keresettfurdo].IRSZ()}");
 
             }
             else
