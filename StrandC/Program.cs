@@ -14,7 +14,15 @@ namespace StrandC
             }
             Console.WriteLine("7.feladat:");
             Console.WriteLine($"Fürdők száma: {furdok.Count}");
-          
+            Console.WriteLine("8.feladat:");
+            double atlag = 0;
+            for (int i = 0; i < furdok.Count; i++)
+            {
+                atlag += furdok[i].ar;
+            }
+            Console.WriteLine($"A fürdőbelépők átlagos ára: {atlag / furdok.Count}");
+         
+
 
         }
     }
