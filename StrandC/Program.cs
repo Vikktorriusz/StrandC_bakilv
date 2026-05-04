@@ -12,8 +12,10 @@ namespace StrandC
             {
                 furdok.Add(new furdo(s));
             }
+            Console.WriteLine("7.feladat:");
+            Console.WriteLine($"Fürdők száma: {furdok.Count}");
+          
 
-           
         }
     }
 }
