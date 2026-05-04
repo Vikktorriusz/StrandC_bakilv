@@ -33,8 +33,31 @@ namespace StrandC
                 }
             }
             Console.WriteLine($"A leghidegebb víz a(z): {leghidegebbnev} nevű fürdőben van");
+            Console.WriteLine("10.feladat");
+            Console.WriteLine("Adjon meg egy fürdő nevét:");
+            string nev = Console.ReadLine();
+            bool van = false;
+            int keresettfurdo = 0;
+            for (int i = 0; i < furdok.Count; i++)
+            {
+                if (furdok[i].nev == nev)
+                {
+                    van = true;
+                    keresettfurdo = i;
+                }
+            }
+            if (van)
+            {
+                Console.WriteLine($"A fürdő címe: {furdok[keresettfurdo].cim}");
+                Console.WriteLine($"A fürdő belépő ára: {furdok[keresettfurdo].ar} Ft");
+                Console.WriteLine($"A fürdő vizének hőfoka: {furdok[keresettfurdo].vizhofok} °C");
 
+            }
+            else
+            {
+                Console.WriteLine("Nincs ilyen nevű fürdő!");
 
+            }
         }
     }
 }
