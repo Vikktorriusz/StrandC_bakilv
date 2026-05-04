@@ -21,7 +21,18 @@ namespace StrandC
                 atlag += furdok[i].ar;
             }
             Console.WriteLine($"A fürdőbelépők átlagos ára: {atlag / furdok.Count}");
-         
+            Console.WriteLine("9.feladat");
+            double leghidegebb = furdok[0].vizhofok;
+            string leghidegebbnev = "";
+            for (int i = 0; i < furdok.Count; i++)
+            {
+                if (furdok[i].vizhofok < leghidegebb)
+                {
+                    leghidegebb = furdok[i].vizhofok;
+                    leghidegebbnev = furdok[i].nev;
+                }
+            }
+            Console.WriteLine($"A leghidegebb víz a(z): {leghidegebbnev} nevű fürdőben van");
 
 
         }
